@@ -1,0 +1,35 @@
+
+<html>
+	<head>
+        <title>Simple DD Chart Example</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" href="Style/ddchart.css" rel="stylesheet" />
+        <script language="javascript" src="http://jqueryui.com/js/jquery.js" ></script>
+		<script language="javascript" src="JavaScript/jquery.ddchart.js"></script>
+	</head>
+    <body style="padding:0; margin:0; overflow:hidden;">
+            
+        <script language="javascript">
+            $(function() {
+	            $("#chart_simple_div").ddBarChart({
+                    chartData: {
+                                    "COLUMNS":["X_BAR_LABEL","X_BAR_VALUE","X_BAR_COLOR"],
+                                    "DATA":[
+                                        ["Tom",1238,"#AA0000"],
+                                        ["Dick",1069,"#AA0000"],
+                                        ["Harry",1214,"#AA0000"],
+                                        ["Mary",1262,"#AA0000"],
+                                        ["Louise",1975,"#AA0000"],
+                                        ["Sue",1076,"#AA0000"]
+                                    ]
+                                }, 
+                    chartContext: "Sales"
+                });           
+            });
+        </script>
+        <div id="chart_simple_div" style="position:relative; width:100%; height:100% margin-bottom:20px">
+        </div>
+		
+    </body>
+</html>
+	
